@@ -403,3 +403,29 @@
 .ps-icon {
     right: 10%;
 }
+
+.rank {
+    background: #1d2226;
+    height: 20rem;
+    margin-bottom: 2rem;
+}
+
+.rank-img-container {
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rank-img {
+    height: 100%;
+}
+
+.rank-info {
+    text-align: center;
+}
+
+.rank-exact {
+    font-size: 2rem;
+    margin-top: .5rem;
+}

@@ -4,7 +4,7 @@ import Header from './../components/Header/Header';
 import NewsPreviewsContainer from './../components/News/NewsPreviewsContainer/NewsPreviewsContainer';
 import { graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
-import Aux from './../hoc/Aux'
+import Aux from './../hoc/_Aux'
 
 class Home extends Component {
 

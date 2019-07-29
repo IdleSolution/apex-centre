@@ -4,7 +4,7 @@ import Link from 'gatsby-link';
 import { graphql } from 'gatsby';
 import Button from './../components/UI/Button/Button'
 import { Helmet } from 'react-helmet';
-import Aux from './../hoc/Aux'
+import Aux from './../hoc/_Aux'
 import Img from "gatsby-image";
 import './all-news.scss'
 

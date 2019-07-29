@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import SearchProfile from '../components/Tracker/SearchProfile';
 import Layout from '../components/Layout/Layout';
-import Aux from './../hoc/Aux'
+import Aux from './../hoc/_Aux'
 import { Helmet } from 'react-helmet';
 
 class Tracker extends Component{

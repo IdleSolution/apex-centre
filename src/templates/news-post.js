@@ -3,7 +3,7 @@ import { graphql, Link } from 'gatsby';
 import Layout from '../components/Layout/Layout';
 import Img from "gatsby-image";
 import { Helmet } from 'react-helmet';
-import Aux from './../hoc/Aux';
+import Aux from './../hoc/_Aux';
 import { DiscussionEmbed } from "disqus-react";
 import './news-post.scss'
 

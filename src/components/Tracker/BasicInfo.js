@@ -8,7 +8,6 @@ const BasicInfo = ({
     platform
 }) => {
     let icon;
-    console.log(platform)
     switch(platform) {
         case 'PC':
             icon = <i className="fab fa-windows account-icon"></i>
