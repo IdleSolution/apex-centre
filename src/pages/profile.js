@@ -53,30 +53,25 @@ class Profile extends Component {
     }
 
     onApplyStats = res => {
+        console.log(res.data.legends.all["Lifeline"].data[0].value);
         const stats = res.data.legends.all;
+        // console.log(stats);
         const keys = Object.keys(stats);
         let allKills = 0;
-        const killsArray = [];
+        let mostKills = 0;
         let overallStats = {};
         for (let key of keys) {
-            if (stats[key].kills) {
-                allKills += parseInt(stats[key].kills);
-                killsArray.push(stats[key].kills);
+            if (stats[key].data) {
+                let kills = parseInt(stats[key].data[0].value);
+                allKills += kills;
+                if(kills > mostKills) {
+                    mostKills = kills;
+                    overallStats.favoriteLegend = this.onCheckImage(key.toLocaleLowerCase());
+                }
             }
         }
         overallStats.allKills = allKills;
 
-        // Finding Legend with most kills
-        let mostKills = Math.max.apply(null, killsArray);
-        for (let key of keys) {
-            if (stats[key].kills) {
-                if (parseInt(stats[key].kills) === mostKills) {
-                    overallStats.favoriteLegend = this.onCheckImage(
-                        key.toLowerCase()
-                    );
-                }
-            }
-        }
         this.setState({
             overallStats: overallStats,
             stats: res.data,
@@ -89,12 +84,13 @@ class Profile extends Component {
     onSearchUser = () => {
         this.setState({ loading: true });
         axios
-            .post("https://my-apex-api.openode.io/stats/get", {
+            .post(`https://cors-anywhere.herokuapp.com/https://api.mozambiquehe.re/bridge?version=4&platform=${this.state.platform}&player=${this.state.username}&auth=QQezd3iX7D1z7m6MexoR`, {
                 authorization: "QQezd3iX7D1z7m6MexoR",
                 username: this.state.username,
                 platform: this.state.platform
             })
             .then(res => {
+                console.log(res);
                 this.onApplyStats(res);
             })
 
@@ -107,36 +103,6 @@ class Profile extends Component {
             });
     };
 
-    onUpdateUser = () => {
-        if (!this.state.updateBlock) {
-            this.setState({ loading: true, showStats: false }, () => {
-                axios
-                    .post("https://my-apex-api.openode.io/stats/update", {
-                        authorization: "QQezd3iX7D1z7m6MexoR",
-                        username: this.state.username,
-                        platform: this.state.platform
-                    })
-                    .then(res => {
-                        this.onApplyStats(res);
-                        this.setState({ updateBlock: true });
-                        let updateBlock = setTimeout(() => {
-                            this.setState({ updateBlock: false });
-                        }, 180000);
-                    })
-                    .catch(e => {
-                        if (e.response) {
-                            this.setState({
-                                err: e.response.data.error.message
-                            });
-                        } else {
-                            this.setState({
-                                err: "Network Error. Try again later"
-                            });
-                        }
-                    });
-            });
-        }
-    };
 
     onChangeUsername = e => {
         this.setState({ username: e.target.value });
@@ -170,11 +136,11 @@ class Profile extends Component {
         if (this.state.stats) {
             const keys = Object.keys(this.state.stats.legends.all);
             for (let key of keys) {
-                if (this.state.stats.legends.all[key].kills) {
+                if (this.state.stats.legends.all[key].data) {
                     stat.push(
                         <Legend
                             name={key}
-                            stats={this.state.stats.legends.all[key]}
+                            stats={this.state.stats.legends.all[key].data}
                             image={this.onCheckImage(key.toLowerCase())}
                         />
                     );

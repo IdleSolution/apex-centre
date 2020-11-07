@@ -1,3 +1,4 @@
+import { forEach } from "lodash";
 import React from "react";
 import './../../pages/tracker.scss'
 
@@ -8,18 +9,15 @@ const Legend = ({
     image,
     stats
 }) => {
-    const keys = Object.keys(stats)
+    console.log(stats);
     const singleStats = []
-    for(let key of keys) {
-        if(stats[key] === '0') {
-            continue;
-        }
+    stats.forEach(stat => {
         singleStats.push(<Stat 
-            key={key}
-            amount={stats[key]}
-            name={key.split('_').join(' ')}
+            key={stat.key}
+            amount={stat.value}
+            name={stat.name}
         />)
-    }
+    })
     return (
         <div className="single-champion-container">
 
