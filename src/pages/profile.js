@@ -177,17 +177,6 @@ class Profile extends Component {
                         platform={this.state.platform}
                     />
 
-                    <Button
-                        onClick={this.onUpdateUser}
-                        classes={`${
-                            this.state.updateBlock
-                                ? "blocked-update-button"
-                                : null
-                        } update-button`}
-                    >
-                        {this.state.updateBlock ? "UP TO DATE" : "UPDATE STATS"}
-                    </Button>
-
                     <div className="account-all-stats">
                         <div className="account-important-info">
                             <div className="account-overview">
