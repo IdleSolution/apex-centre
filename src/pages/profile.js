@@ -53,9 +53,7 @@ class Profile extends Component {
     }
 
     onApplyStats = res => {
-        console.log(res.data.legends.all["Lifeline"].data[0].value);
         const stats = res.data.legends.all;
-        // console.log(stats);
         const keys = Object.keys(stats);
         let allKills = 0;
         let mostKills = 0;
@@ -90,7 +88,7 @@ class Profile extends Component {
                 platform: this.state.platform
             })
             .then(res => {
-                console.log(res);
+                console.log("xD???");
                 this.onApplyStats(res);
             })
 
