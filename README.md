@@ -36,4 +36,4 @@ My website is all about Apex Legends. It has quite a few real-time users. People
 	    npm run build
 
 ## Live
-Website is live on https://apex-centre.com
+Website is live on https://apex-centre.netlify.app/
