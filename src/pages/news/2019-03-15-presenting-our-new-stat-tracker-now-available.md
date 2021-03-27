@@ -6,7 +6,7 @@ timePosted: 2019-03-15T20:43:02.598Z
 description: >-
   Ever wanted to check your in-game stats? With our brand new Apex Legends
   Tracker it is possible! Check as you progress with our website.
-path: news/check-your-stats/
+path: /news/check-your-stats/
 image: /img/screenshot_2019-03-15-apex-legends-tracker-check-your-stats-min.png
 tags: 'stats, tracker, profile, apex, legends'
 ---

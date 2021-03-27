@@ -58,8 +58,8 @@ const allNews = ({ data, pageContext }) => {
                 </main>
 
                 <div className='all-news__btn-container'>
-                    <NavLink test={first} url={`all/news/${previousUrl}`} text="Previous" />
-                    <NavLink test={last} url={`all/news/${nextUrl}`} text="Next" />
+                    <NavLink test={first} url={`/all/news/${previousUrl}`} text="Previous" />
+                    <NavLink test={last} url={`/all/news/${nextUrl}`} text="Next" />
                 </div>
 
             </Layout>

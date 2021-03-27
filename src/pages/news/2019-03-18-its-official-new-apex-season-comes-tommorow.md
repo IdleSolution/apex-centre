@@ -6,7 +6,7 @@ timePosted: 2019-03-18T19:36:16.783Z
 description: >-
   Are you tired of waiting for new Apex season? Good for you, it is almost
   there!
-path: news/first-apex-season/
+path: /news/first-apex-season/
 image: /img/apex-legends-charecter-guide-group-shot-2-min.jpg
 tags: 'apex, legends, season, battle, pass'
 ---

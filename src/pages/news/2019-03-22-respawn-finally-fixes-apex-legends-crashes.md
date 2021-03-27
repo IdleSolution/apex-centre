@@ -6,7 +6,7 @@ timePosted: 2019-03-22T20:05:00.033Z
 description: >-
   Have you been wondering what did Respawn add in the recent Apex Legends patch?
   Its one of the best thing that could happen to Apex players!
-path: news/apex-legends-crash-fix/
+path: /news/apex-legends-crash-fix/
 image: /img/epic-apex-legends-wallpaper-hd-min.jpg
 tags: 'apex, legends, crash, patch, fix'
 ---

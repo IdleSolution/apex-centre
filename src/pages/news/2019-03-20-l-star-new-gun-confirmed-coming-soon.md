@@ -4,7 +4,7 @@ title: 'L-STAR: New gun confirmed coming soon'
 date: Mar 20th 2019
 timePosted: 2019-03-20T15:58:37.314Z
 description: More of new Apex content from Respawn!
-path: news/lstar-gun-coming-to-apex/
+path: /news/lstar-gun-coming-to-apex/
 image: /img/bangalore-apex-legends-wallpapers-min.jpg
 tags: 'apex, l-star, weapon, gun, legends'
 ---

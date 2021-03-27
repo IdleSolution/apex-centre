@@ -6,7 +6,7 @@ timePosted: 2019-03-15T20:21:44.757Z
 description: >-
   According to Reuters, a famous streamer was paid a big chunk of money to play
   newest Respawn's game, Apex Legends.
-path: news/ninja-earned-milion/
+path: /news/ninja-earned-milion/
 image: /img/105076732-tyler_2.1910x1000.jpg
 tags: 'ninja, apex, legends, milion, deal'
 ---

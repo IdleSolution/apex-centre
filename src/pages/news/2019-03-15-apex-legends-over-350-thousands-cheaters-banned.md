@@ -6,7 +6,7 @@ timePosted: 2019-03-15T19:52:10.275Z
 description: >-
   As we learn from Respawn Entertainment, they recently caught a lot of people
   cheating in their game.
-path: news/over-300k-cheaters-banned/
+path: /news/over-300k-cheaters-banned/
 image: /img/pasted_image_0_4-min.png
 tags: 'cheats, apex, legends, respawn, hacks, ban'
 ---

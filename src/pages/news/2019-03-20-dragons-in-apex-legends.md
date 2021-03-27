@@ -4,7 +4,7 @@ title: Dragons in Apex Legends?!
 date: Mar 20th 2019
 timePosted: 2019-03-20T14:34:39.388Z
 description: 'According to various leaks, there is something huge incoming soon. Dragons might be seen in Apex Legends!'
-path: news/dragons-in-apex/
+path: /news/dragons-in-apex/
 image: /img/gu7obhnsvflrus5xwpazye-min.jpg
 tags: 'apex, legends, dragon, leak'
 ---

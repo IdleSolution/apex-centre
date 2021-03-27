@@ -7,7 +7,7 @@ description: >-
   Everyone knows the pain of a teammate leaving early, right after he gets
   knocked down. It became a big issue that is bad for Apex Legends players, so
   game developers decided to do something with it!
-path: news/leaver-penalty-apex-legends
+path: /news/leaver-penalty-apex-legends
 image: /img/apex2.jpg
 tags: 'leaver, penalty, apex, legends'
 ---

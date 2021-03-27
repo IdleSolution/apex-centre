@@ -88,7 +88,6 @@ class Profile extends Component {
                 platform: this.state.platform
             })
             .then(res => {
-                console.log("xD???");
                 this.onApplyStats(res);
             })
 

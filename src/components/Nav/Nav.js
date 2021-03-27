@@ -58,7 +58,7 @@ class Nav extends Component {
                 <nav className={`${hiddenNavClass} ${stickyNavClass} nav`} ref={this.nav}>
                     <div className='nav__links-container'>
                         <Link to='/'><p className='nav__link'>HOME</p></Link>
-                        <Link to='all/news/'><p className='nav__link'>NEWS</p></Link>
+                        <Link to='/all/news/'><p className='nav__link'>NEWS</p></Link>
                         <Link to='/tracker/'><p className='nav__link'>TRACKER</p></Link>
 
                     </div>

@@ -75,7 +75,7 @@ class Home extends Component {
         singleNews: markdownRemark(
             frontmatter: {
               path: {
-                eq: "news/check-your-stats/"
+                eq: "/news/check-your-stats/"
               }
             }
         
